@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   onUsernameSubmitted(username) {
-    fetch( apiUrls + '/users', {
+    fetch(apiUrls + '/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
