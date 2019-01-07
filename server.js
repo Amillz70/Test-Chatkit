@@ -37,7 +37,7 @@ app.post('/authenticate', (req, res) => {
   res.status(authData.status).send(authData.body)
 })
 
-// const PORT = 3001
+// const PORT = 7165
 // app.listen(PORT, err => {
 //   if (err) {
 //     console.error(err)
@@ -46,7 +46,7 @@ app.post('/authenticate', (req, res) => {
 //   }
 // })
 
-const port = process.env.PORT || 3001
+const port = process.env.PORT || 7165
 
 app.listen(port, () => {
   console.log('listening on port ' + port)
