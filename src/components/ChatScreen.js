@@ -37,7 +37,7 @@ componentDidMount() {
     instanceLocator: 'v1:us1:92f6e0ea-dddd-478f-bca6-17bbc528eb78',
     userId: this.props.currentUsername,
     tokenProvider: new Chatkit.TokenProvider({
-      url: 'http://localhost:3001/authenticate',
+      url: 'http://localhost:7165/authenticate',
     }),
   })
 
