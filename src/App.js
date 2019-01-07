@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import UsernameForm from './components/UsernameForm'
 import ChatScreen from './components/ChatScreen'
-import apiUrls from './apiUrls'
+import apiUrl from './apiUrls'
 
 class App extends Component {
   constructor() {
@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   onUsernameSubmitted(username) {
-    fetch(apiUrls + '/users', {
+    fetch(apiUrl + '/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
